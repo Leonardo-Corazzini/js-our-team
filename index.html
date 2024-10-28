@@ -11,12 +11,39 @@
 
 <body>
     <main class="container">
-        <h1 class="text-center">Meet our Team</h1>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio tempore aspernatur
-            reprehenderit dignissimos repudiandae, aperiam necessitatibus veniam temporibus eos hic quam mollitia
-            deserunt id ipsa minus nesciunt culpa. Iusto, officiis?</p>
+        <div>
+            <h1 class="text-center fw-bold my-4">Meet our Team</h1>
+            <p class="text-center fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio tempore
+                aspernatur
+                reprehenderit dignissimos repudiandae, aperiam necessitatibus veniam temporibus eos hic quam mollitia
+                deserunt id ipsa minus nesciunt culpa. Iusto, officiis?</p>
+        </div>
         <div id="card-row" class="row">
         </div>
+        <form action="" method="get" id="form-card" class="mt-5">
+            <div class="row g-3">
+                <div class="col-6">
+                    <label for="card-name" class="col-sm-2 col-form-label">Nome</label>
+                    <input type="text" class="form-control" id="card-name" placeholder="Nome" aria-label="Nome">
+                </div>
+                <div class="col-6">
+                    <label for="card-role" class="col-sm-2 col-form-label">Professione</label>
+                    <input type="text" class="form-control" id="card-role" placeholder="Professione" aria-label="professione">
+                </div>
+                
+                <div class="col-6">
+                    <label for="card-email" class="col-sm-2 col-form-label">Email</label>
+                    <input type="email" class="form-control" id="card-email" placeholder="Inserisci qui la tua email">
+                </div>
+                <div class="col-6 mt-4">
+                    <label for="form-file" class="form-label">Inserisci una foto profilo</label>
+                    <input class="form-control" type="file" id="form-file">
+                </div>
+
+            </div>
+            <button class="btn btn-primary mt-3">Inserisci card</button>
+        </form>
+
     </main>
     <script src="./script.js"></script>
 </body>
