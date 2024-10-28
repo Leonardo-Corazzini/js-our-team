@@ -36,3 +36,21 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+const cardRow = document.getElementById('card-row')
+
+for(let i = 0; i < teamMembers.length;i++){
+ let element = teamMembers[i]
+  const card =`
+  <div class="col-4 row">
+    <div class="col-4">
+      <img src="${element.img}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-8">
+      <h5 class="card-title">${element.name}</h5>
+      <p class="card-text">${element.role}</p>
+      <p class="card-text">${element.email}</p>
+    </div>
+
+  </div>`
+  cardRow.innerHTML += card
+}
